@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: azure;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,91,0.7962535355939251) 100%);
 }
 .main{
     display: grid;
@@ -17,6 +18,10 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 40px;
     text-align: center;
+    font-weight: bold;
+    -webkit-text-stroke: 1px white;
+    border-bottom: 2px solid aqua;
+    padding: 10px;
 }
 .test{
     font-size: 18px;
@@ -28,10 +33,44 @@ body{
 textarea{
     font-size: 20px;
     padding: 10px;
+    border-radius: 5px;
+    background-color: tan;
 }
 .btn{
     font-size: 22px;
     padding: 10px;
     text-transform: capitalize;
     margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    background-color: aquamarine;
+}
+.btn:hover{
+    font-size: 25px;
+    padding: 15px;
+    border: 2px solid white;
+}
+@media (max-width:1000px) {
+    #area{
+        height: 10em;
+        width: 45em;
+    }
+}
+@media (max-width:800px) {
+    #area{
+        height: 10em;
+        width: 35em;
+    }
+}
+@media (max-width:600px) {
+    #area{
+        height: 10em;
+        width: 25em;
+    }
+}
+@media (max-width:468px) {
+    #area{
+        height: 10em;
+        width: 20em;
+    }
 }
